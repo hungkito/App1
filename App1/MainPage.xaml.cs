@@ -29,9 +29,23 @@ namespace App1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Text_Block.Text = "Len Rank De";
+            Text_Block.Text = "len rank de";
         }
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            Button mybutton = new Button();
+            mybutton.Name = "ClickMeButton";
+            mybutton.Content = "Click Me";
+            mybutton.Width = 200;
+            mybutton.Height = 100;
+            mybutton.Margin = new Thickness(20, 20, 0, 0);
+            mybutton.HorizontalAlignment = HorizontalAlignment.Left;
+            mybutton.VerticalAlignment = VerticalAlignment.Top;
 
+            mybutton.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+            mybutton.Click += Button_Click;
+            LayoutGrind.Children.Add(mybutton);
+        }
         private void Text_Block_SelectionChanged(object sender, RoutedEventArgs e)
         {
 

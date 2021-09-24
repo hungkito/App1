@@ -6,11 +6,25 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
 
-    <Grid >
+    <!--<Grid >
         <Button x:Name="Button" Content="Click Me " Margin="836,397,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBlock x:Name="Text_Block" HorizontalAlignment="Left" Margin="844,460,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="157" Width="319" SelectionChanged="Text_Block_SelectionChanged"/>
+        <TextBlock x:Name="Text_Block" HorizontalAlignment="Left" Margin="821,488,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="101" SelectionChanged="Text_Block_SelectionChanged"/>
+
+    </Grid>-->
+    <Grid Name="LayoutGrind">
+
+        <Button Name="ClickMeButton" 
+                Content="Click Me" 
+                Margin="836,397,0,0" 
+                VerticalAlignment="Top" 
+                Click="Button_Click"
+                Background="Red"
+                Width="200"
+                Height="100"/>
+        <TextBlock x:Name="Text_Block" HorizontalAlignment="Left" Margin="864,531,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="137" SelectionChanged="Text_Block_SelectionChanged"/>
 
     </Grid>
 </Page>
